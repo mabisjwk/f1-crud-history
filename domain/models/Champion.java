@@ -8,6 +8,7 @@ public class Champion {
     private int pontos;
     private int vitorias;
     private String fotoUrl;
+    private Boolean favorito;
 
     public Champion(String pilotoId, String nome, String nacionalidade, String equipe, int pontos, int vitorias, String fotoUrl) {
         this.pilotoId = pilotoId;
@@ -17,6 +18,7 @@ public class Champion {
         this.pontos = pontos;
         this.vitorias = vitorias;
         this.fotoUrl = fotoUrl;
+        this.favorito = false;
     }
 
     public String getPilotoId() {
@@ -73,6 +75,14 @@ public class Champion {
 
     public void setFotoUrl(String fotoUrl) {
         this.fotoUrl = fotoUrl;
+    }
+
+    public Boolean getFavorito() {
+        return favorito;
+    }
+
+    public void setFavorito(Boolean favorito) {
+        this.favorito = favorito;
     }
 
     public Champion(){}
